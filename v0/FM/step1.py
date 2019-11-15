@@ -39,7 +39,7 @@ device_model = []
 device_ip = []
 device_id = []
 
-with Stopwatch('Read training data'):
+with Stopwatch('Step1: Read training data'):
     train_input_file = sys.argv[1]
     train = pd.read_csv(train_input_file, chunksize=10000)
 
